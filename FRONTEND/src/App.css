@@ -1,0 +1,222 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:#0f1117;
+}
+
+.container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)
+  ),
+  url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85");
+
+  background-size:cover;
+  background-position:center;
+  padding:40px;
+}
+
+.form-card{
+  width:700px;
+
+  background:rgba(15,17,23,0.85);
+
+  backdrop-filter:blur(15px);
+
+  border:1px solid rgba(212,175,55,0.4);
+
+  border-radius:30px;
+
+  padding:50px;
+
+  box-shadow:
+  0 0 30px rgba(212,175,55,0.15);
+}
+
+.form-card h1{
+  text-align:center;
+  color:white;
+  font-size:52px;
+  margin-bottom:40px;
+  line-height:1.2;
+}
+
+.gold{
+  color:#d4af37;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:25px;
+}
+
+.form-group label{
+  color:white;
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.form-group input,
+.form-group textarea{
+
+  background:transparent;
+
+  border:1px solid #d4af37;
+
+  color:white;
+
+  padding:16px;
+
+  border-radius:15px;
+
+  font-size:16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+  color:#a0a0a0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+  outline:none;
+
+  border:1px solid #f0c75e;
+
+  box-shadow:
+  0 0 10px rgba(212,175,55,0.3);
+}
+
+.quote-btn{
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:#d4af37;
+
+  color:black;
+
+  font-size:18px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.quote-btn:hover{
+
+  transform:translateY(-2px);
+
+  background:#f0c75e;
+}
+
+.footer-text{
+
+  text-align:center;
+
+  color:#a0a0a0;
+
+  margin-top:25px;
+
+  font-size:14px;
+}
+select{
+  background:transparent;
+  color:white;
+  border:1px solid #d4af37;
+  padding:16px;
+  border-radius:15px;
+  font-size:16px;
+}
+
+option{
+  color:black;
+}
+.button-group{
+  display:flex;
+  gap:15px;
+}
+
+.back-btn{
+  flex:1;
+  padding:18px;
+  border:none;
+  border-radius:15px;
+  background:#444;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.quote-btn{
+  flex:2;
+}
+.section-title{
+  color:white;
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:15px;
+  margin-top:20px;
+}
+
+.card-grid{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+  flex-wrap:wrap;
+}
+
+.select-card{
+  flex:1;
+  min-width:120px;
+
+  padding:20px;
+
+  text-align:center;
+
+  border:1px solid #555;
+
+  border-radius:15px;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.select-card:hover{
+  border-color:#d4af37;
+}
+
+.select-card.active{
+  border:2px solid #d4af37;
+
+  background:
+  rgba(212,175,55,0.15);
+
+  box-shadow:
+  0 0 15px rgba(212,175,55,0.3);
+}

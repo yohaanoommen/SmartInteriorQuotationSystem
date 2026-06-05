@@ -1,0 +1,64 @@
+.component-card {
+  background: #1e1e1e;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  border: 2px solid transparent;
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+}
+
+.component-card.selected {
+  border: 2px solid #d4af37;
+
+  box-shadow:
+    0 0 20px rgba(212,175,55,.3);
+}
+
+.component-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.component-content {
+  padding: 15px;
+}
+
+.component-content h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.select-btn {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.selected-btn {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #d4af37;
+
+  color: black;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
