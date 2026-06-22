@@ -1,64 +1,95 @@
 .component-card {
-  background: #1e1e1e;
-  border-radius: 20px;
+  background: #1f1f1f;
+  border-radius: 18px;
   overflow: hidden;
   cursor: pointer;
-
-  transition: 0.3s;
-
+  transition: all 0.3s ease;
   border: 2px solid transparent;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .component-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 .component-card.selected {
-  border: 2px solid #d4af37;
+  border-color: #d4af37;
+  box-shadow: 0 12px 35px rgba(212,175,55,0.35);
+}
 
-  box-shadow:
-    0 0 20px rgba(212,175,55,.3);
+.image-container {
+  position: relative;
 }
 
 .component-image {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
+  display: block;
+}
+
+.selected-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #d4af37;
+  color: #111;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
 .component-content {
-  padding: 15px;
+  padding: 18px;
 }
 
 .component-content h3 {
-  color: white;
-  margin-bottom: 15px;
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.component-subtitle {
+  color: #b5b5b5;
+  font-size: 14px;
+  margin: 10px 0 18px;
+}
+
+.select-btn,
+.selected-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .select-btn {
-  width: 100%;
-  padding: 10px;
+  background: #333;
+  color: white;
+}
 
-  border: none;
-
-  border-radius: 10px;
-
-  cursor: pointer;
+.select-btn:hover {
+  background: #444;
 }
 
 .selected-btn {
-  width: 100%;
-  padding: 10px;
-
-  border: none;
-
-  border-radius: 10px;
-
   background: #d4af37;
+  color: #111;
+}
 
-  color: black;
-
-  font-weight: bold;
-
-  cursor: pointer;
+.selected-btn:hover {
+  background: #c89b1f;
+}
+.helper-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
