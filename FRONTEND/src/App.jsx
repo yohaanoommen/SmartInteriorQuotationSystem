@@ -271,19 +271,31 @@ function App() {
   }
   return (
     <div className="container">
+      <div className="bg-orb orb-one" />
+      <div className="bg-orb orb-two" />
+      <div className="brand-pill"><span className="brand-mark">J</span> Jeo Interiors</div>
 
       {/* ---------------- STEP 1 ---------------- */}
 
       {step === 1 && (
 
         <div className="form-card">
+          <div className="step-indicator">
+            <span className="active">01</span>
+            <span>02</span>
+            <span>03</span>
+          </div>
+
+          <div className="eyebrow">Design Consultation</div>
 
           <h1>
-            Get Your Free
+            Get Your
             <br />
             <span className="gold">
-              Interior Quotation
+              Exclusive Interior Quote
             </span>
+            <br />
+            <span className="free-copy">for FREE</span>
           </h1>
 
           <div className="form-group">
@@ -349,6 +361,13 @@ function App() {
       {step === 2 && (
 
         <div className="form-card">
+          <div className="step-indicator">
+            <span>01</span>
+            <span className="active">02</span>
+            <span>03</span>
+          </div>
+
+          <div className="eyebrow">Project Scope</div>
 
           <h1>
             Project
@@ -446,6 +465,13 @@ function App() {
       {step === 3 && (
 
         <div className="form-card">
+          <div className="step-indicator">
+            <span>01</span>
+            <span>02</span>
+            <span className="active">03</span>
+          </div>
+
+          <div className="eyebrow">Room Planning</div>
 
           <h1>
 
