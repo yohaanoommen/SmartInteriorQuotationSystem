@@ -491,7 +491,7 @@ export const generateQuotation = async (
     "• This quotation is based on the measurements provided by the customer.",
     "• Final measurements will be taken during the site visit.",
     "• Final pricing may vary depending on actual site conditions.",
-    "• GST and additional works will be charged separately if applicable.",
+    "• Quoted rates are exclusive of 18% GST.",
   ];
 
   doc.text(
